@@ -1,0 +1,91 @@
+<!doctype html>
+<html dir="ltr" lang="en-US">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./stylesheets/default.css" type="text/css" media="screen, projection"/>
+<link id="css" rel="stylesheet" href="./common/prism/funky/prism.css" type="text/css" media="screen, projection"/>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> 
+<script id="js" src="./common/prism/funky/prism.js"></script>
+<script src="./javascripts/default.js"></script>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<h1>Highlight <span>&lt;code&gt;</span> without JavaScript</h1>
+			<div>
+				<span>made by</span>
+				<a href="http://eduardmoldovan.com/">Eduárd Moldován</a>
+			</div>
+			<h2>Paste it, set your options, get your finished highlighted code. I used <a href="http://prismjs.com">Prism.js</a> for this project, other highlighters might be introduced later.</h2>
+		</header>
+		<article>
+			<ul class="tabs">
+				<li>
+					<a href="" title="Paste your code" class="active" data-tab="1">
+						<span>1.</span>
+						<strong>Paste</strong>
+					</a>
+				</li>
+				<li>
+					<a href="" title="Preview with yours settings applied" data-tab="2">
+						<span>2.</span>
+						<strong>Preview</strong>
+					</a>
+				</li>
+				<li>
+					<a href="" title="Get yor code" data-tab="3">
+						<span>3.</span>
+						<strong>Get code</strong>
+					</a>
+				</li>
+			</ul>
+			<div id="tab-1" class="tab active">
+				<textarea placeholder="Paste your code here">p { color: red; }</textarea>
+			</div>
+			<div id="tab-2" class="tab">
+				<h3>Choose language 
+					<select id="language">
+						<option value="markup">HTML Markup</option>
+						<option value="css" selected="selected">CSS</option>
+						<option value="javascript">JavaScript</option>
+						<option value="java">Java</option>
+						<option value="php">PHP</option>
+						<option value="coffeescript">CoffeeScript</option>
+						<option value="sass">Sass (Scss)</option>
+						<option value="bash">Bash</option>
+						<option value="c">C</option>
+						<option value="python">Python</option>
+						<option value="sql">SQL</option>
+						<option value="groovy">Groovy</option>
+						<option value="http">HTTP</option>
+					</select> and theme 
+					<select id="theme">
+						<option value="default">Default</option>
+						<option value="dark">Dark</option>
+						<option value="funky" selected="selected">Funky</option>
+						<option value="okaidia">Okaidia</option>
+						<option value="twighlight">Twilight</option>
+						<option value="coy">Coy</option>
+					</select>.</h3>
+				<div class="preview">
+					<pre><code class="language-css">p { color: red }</code></pre>
+				</div>
+			</div>
+			<div id="tab-3" class="tab">
+				<h3>Link <a href="">this file</a> into your source, then use the code below.</h3>
+				<textarea placeholder="No code pasted yet"></textarea>
+			</div>
+		</article>
+		<footer></footer>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
