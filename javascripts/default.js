@@ -1,7 +1,7 @@
 /*jslint node:true */
 /*jslint nomen:true */
 /*jslint es5: true */
-/*global Prism,handleError,process,mysql,Layout,module,exports,__dirname,require,$,console,cookie,alert,Ember,jQuery,FileReader,canvas,FB*/
+/*global escape,Prism,handleError,process,mysql,Layout,module,exports,__dirname,require,$,console,cookie,alert,Ember,jQuery,FileReader,canvas,FB*/
 
 function paths(theme) {
 	"use strict";
@@ -18,6 +18,7 @@ function refreshTab3() {
 
 function refreshTab2() {
 	"use strict";
+	// $(".preview pre code").html(escape($("#tab-1 textarea").val()));
 	$(".preview pre code").html($("#tab-1 textarea").val());
 	Prism.highlightAll();
 	refreshTab3();
@@ -68,7 +69,8 @@ $(function() {
 		theme = paths(chosenTheme);
 
 		$("#css").attr("href", theme.cssPath);
-		// $("#js").attr("src", theme.jsPath);
+		$("#tab-3 h3 a").attr("href", theme.cssPath);
+		$("#js").attr("src", theme.jsPath);
 		refreshTab2();
 	});
 	
