@@ -1,4 +1,4 @@
-code-highlight
+Code Highlight
 ==============
 
 Small tool for creating nice code higlights without the need of embedding JavaScript into a page. 
