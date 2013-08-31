@@ -18,8 +18,13 @@ function refreshTab3() {
 
 function refreshTab2() {
 	"use strict";
-	// $(".preview pre code").html(escape($("#tab-1 textarea").val()));
-	$(".preview pre code").html($("#tab-1 textarea").val());
+	var code;
+
+	code = $("#tab-1 textarea").val();
+	code = code.replace(/</g, "&lt;");
+	code = code.replace(/>/g, "&gt;");
+
+	$(".preview pre code").html(code);
 	Prism.highlightAll();
 	refreshTab3();
 }
