@@ -13,7 +13,7 @@ function paths(theme) {
 
 function refreshTab3() {
 	"use strict";
-	$("#tab-3 textarea").val($(".preview pre code").html());
+	$("#tab-3 textarea").val($(".preview").html().replace(/^[\r\n]+|\.|[\r\n]+$/g, "").replace(/[\t]/g,""));
 }
 
 function refreshTab2() {
