@@ -24,6 +24,14 @@ header div a {
 	font-style: italic;
 }
 
+.back {
+	float: left;
+	font-family: georgia, serif;
+	font-size: 25px;
+	margin: 20px 0;
+	width: 100%;
+}
+
 footer {
 	float: left;
 	padding: 25px 0;
@@ -47,8 +55,9 @@ h1 span {
 
 h2 {
 	font-weight: normal;
-	padding: 15px 0 20px 0;
-	line-height: 33px;
+	padding: 15px 0px 20px;
+	line-height: 29px;
+	font-size: 20px;
 }
 
 h3 {
